@@ -1,0 +1,202 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+#about {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+h1 {
+    line-height: 20px;
+}
+
+#content {
+    background-color: forestgreen;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+
+#image-one {
+    background-color: orangered;
+    border-radius: 10px;
+    color: white;
+    width: 25%;
+}
+
+#image-two {
+    background-color: yellowgreen;
+    border-radius: 10px;
+    color:black;
+    width: 25%;
+}
+
+#image-three {
+    background-color: blueviolet;
+    border-radius: 10px;
+    color:white;
+    width: 25%;
+}
+ 
+#like {
+    font-size: 16px;
+    border: 2px dashed black;
+    background-color: goldenrod;
+    width: 25%;
+}
+
+
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+  
+body {
+    font-family: Helvetica, Helvetica Neue, Arial;
+    font-size: 16px;
+    line-height: 26px;
+}    
+  
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+  
+.header-container {
+    border-bottom: 20px solid #0B132B;
+}
+  
+.footer-container,
+.main aside {
+    border-top: 20px solid #0B132B;
+}
+  
+.header-container,
+.footer-container,
+.main aside {
+    background: #67AAF9;
+}
+  
+.title {
+    color: white;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: cornflowerblue;
+}
+  
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+    background-color: forestgreen;
+}
+  
+.main {
+    padding: 30px 0;
+}
+  
+.main article h1 {
+    font-size: 2em;
+}
+  
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+  
+.footer-container footer {
+     color: white;
+    padding: 20px 0;
+}  
+
+
+@media only screen and (min-width: 480px) {
+    nav a {
+        float: left;
+        width: 30%;
+        margin: 0 0 0 5%;
+        padding: 25px 1%;
+        margin-bottom: 0;
+    }
+
+    nav :first-child {
+        margin-left: 0;
+    }
+
+    nav :last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title {
+        float: left;
+        font-size: 1.4em; 
+    }
+
+    nav {
+        float: right;
+        width: 60%;
+    }
+
+    nav a {
+        padding: 15px 1%;
+    }
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 38%;
+    }
+}
+/* Breakpoints define a certain threshold where the layout should change, typically defined by the content (and not the devices.)*/
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
